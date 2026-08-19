@@ -253,7 +253,7 @@ pub fn Parser() type {
                     @compileError("Invalid field");
             }
 
-            if (fields.len != std.meta.fields(T).len) {
+            if (fields.len != @typeInfo(T).@"struct".field_names.len) {
                 @compileError("Uninitialized type");
             }
         }
