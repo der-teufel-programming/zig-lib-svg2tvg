@@ -5,8 +5,12 @@
     .version = "0.0.0",
     .dependencies = .{
         .xml = .{
-            .url = "git+https://github.com/ianprime0509/zig-xml#b97f2ab4868ae3cac9902b33a40d3f31d2df739d",
-            .hash = "xml-0.2.0-ZTbP3yI6AgB9Rpd2hQrueO63ib0Bm6mQiL_WB1t7JAmP",
+            .url = "git+https://github.com/carlmontanari/zig-xml#13934ee5fa8337523f8caae2f5de0263a67c70c3",
+            .hash = "xml-0.2.0-ZTbP35N4AgCLKY1YU0TFz0pRvLiGWnEWAoO6Ugjk-RRE",
+        },
+        .z2d = .{
+            .url = "git+https://github.com/Yinameah/z2d#3484e237a76ab87c7527a4fc3a6759ad565e5ccf",
+            .hash = "z2d-0.12.0-j5P_Hk46EQDHafHybQ9ZngQhYXtu5FbOogr5-8FVesXu",
         },
     },
     .paths = .{
