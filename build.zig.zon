@@ -5,8 +5,8 @@
     .version = "0.0.0",
     .dependencies = .{
         .xml = .{
-            .url = "git+https://github.com/der-teufel-programming/zig-xml#fdfa0d1c9a85067dfa2508b8c239f920ce2b02a1",
-            .hash = "xml-0.2.3-ZTbP30l4AgBU2mHLmThwAGS4iePK9UkVxl2Tqj4pnLNl",
+            .url = "git+https://github.com/der-teufel-programming/zig-xml#ed81ee42364740aaf590165a83801985315c9ee3",
+            .hash = "xml-0.2.3-ZTbP33d4AgD_2R1iv9ypRtJcoA5uXJoKfYGDPnNOMgAW",
         },
     },
     .paths = .{
