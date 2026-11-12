@@ -127,7 +127,7 @@ pub fn Parser() type {
 
             switch (version) {
                 1 => {
-                    const ScaleAndFlags = packed struct {
+                    const ScaleAndFlags = bitpack struct {
                         scale: u4,
                         color_encoding: u2,
                         coordinate_range: u2,
@@ -409,7 +409,7 @@ pub fn Parser() type {
         }
 
         fn readNode(self: *Self) !Path.Node {
-            const Tag = packed struct {
+            const Tag = bitpack struct {
                 type: Path.Type,
                 padding0: u1 = 0,
                 has_line_width: bool,
@@ -547,7 +547,7 @@ pub fn Parser() type {
     };
 }
 
-const CountAndStyleTag = packed struct {
+const CountAndStyleTag = bitpack struct {
     const Self = @This();
     raw_count: u6,
     style_kind: u2,

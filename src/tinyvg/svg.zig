@@ -261,7 +261,6 @@ const SvgPath = struct {
     path: tvg.Path,
 
     pub fn format(self: SvgPath, writer: *std.Io.Writer) std.Io.Writer.Error!void {
-
         for (self.path.segments) |segment| {
             try writer.print("M{d},{d}", .{ segment.start.x, segment.start.y });
             for (segment.commands) |cmd| {
